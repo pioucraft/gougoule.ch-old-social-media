@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recherche Gougoule.ch</title>
+    <script src="js/search.js"></script>
+    <link rel="stylesheet" href="css/topbar.css">
+    <script src="js/topbar.js"></script>
+    <link rel="stylesheet" href="css/search.css">k
+</head>
+<body>
+    <div class="topbar">
+        <button class="topbar-theButton" onclick="location.href='index.html'">
+            <img src="images/logo.svg" alt="Gougoule.ch logo" class="topbar-logo">
+        </button>
+        <button class="topbar-theButton" onclick="location.href='index.html'">
+            <h1 class="topbar-title">Gougoule.ch</h1>
+        </button>
+        <button class="topbar-post" onclick="location.href = 'post.html?m=0'">
+            <img src="images/post.svg" alt="post button image" class="topbar-post-image">
+        </button>
+        <input type="search" class="topbar-search" onchange="search()" id="search">
+        <h2 class="topbar-username" id="topbar-username">Se connecter</h2>
+        <button class="topbar-account" onclick="accountButton()">
+            <img src="images/account.svg" alt="account default logo" class="topbar-account-image" id="topbar-account-image" widht="100" height="100">
+        </button>
+    </div>
+    <div class="duckduckgo" id="duckduckgo">
+        <h1 class="information">résultats de duckduckgo:</h1>
+    </div>
+    <div id="results" class="posts">
+        <h1 class="information">résultats sur le réseau social de gougoule.ch:</h1>
+    </div>
+</body>
+</html>

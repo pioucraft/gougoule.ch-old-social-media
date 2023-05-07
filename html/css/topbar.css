@@ -1,0 +1,106 @@
+body {
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.topbar {
+    overflow: hidden;
+    display: flex;
+    height: 9vh;
+    position: fixed;
+    background-color: #1A1A1B;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    border-bottom-style: solid;
+    border-color: #343536;
+    border-width: 0.5vh;
+}
+
+.topbar-logo {
+    height: 7vh;
+    width: 7vh;
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
+
+.topbar-title {
+    margin-left: 1vh;
+    margin-top: 1vh;
+    color: #fff;
+    top: 50%;
+    height: 7vh;
+    margin-top: 2.5vh;
+    white-space: nowrap;
+    font-size:xx-large
+}
+
+.topbar-post {
+    background-color: #1A1A1B;
+    border-style: none;
+    cursor: pointer;
+}
+
+.topbar-post-image {
+    height: 7vh;
+    width: 7vh;
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
+
+.topbar-search {
+    background: #343536;
+    border: #343536;
+    border-radius: 100vh;
+    margin-left: 1vw;
+    height: 7vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    outline: none;
+    color: #fff;
+    font-size: 3vh;
+    padding: 10px;
+    width: 100%;
+}
+
+.topbar-username {
+    margin-left: 1vw;
+    color: #fff;
+    height: 7vh;
+    margin-top: 2.5vh;
+    font-size: 3vh;
+    white-space: nowrap;
+}
+
+.topbar-account {
+    background-color: #1A1A1B;
+    border-style: none;
+    cursor: pointer;
+}
+
+.topbar-account-image {
+    height: 7vh;
+    width: 7vh;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    margin-right: 1vw;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 110vh) {
+    .topbar-username {
+        visibility: hidden;
+        position: fixed;
+    }
+    .topbar-title {
+        visibility: hidden;
+        position: fixed;
+    }
+}
+
+.topbar-theButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

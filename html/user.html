@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>utilisateur Gougoule.ch</title>
+    <script src="js/user.js"></script>
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/topbar.css">
+    <script src="js/topbar.js"></script>
+</head>
+<body>
+    <div class="topbar">
+        <button class="topbar-theButton" onclick="location.href='index.html'">
+            <img src="images/logo.svg" alt="Gougoule.ch logo" class="topbar-logo">
+        </button>
+        <button class="topbar-theButton" onclick="location.href='index.html'">
+            <h1 class="topbar-title">Gougoule.ch</h1>
+        </button>
+        <button class="topbar-post" onclick="location.href = 'post.html?m=0'">
+            <img src="images/post.svg" alt="post button image" class="topbar-post-image">
+        </button>
+        <input type="search" class="topbar-search" onchange="search()" id="search">
+        <h2 class="topbar-username" id="topbar-username">Se connecter</h2>
+        <button class="topbar-account" onclick="accountButton()">
+            <img src="images/account.svg" alt="account default logo" class="topbar-account-image" id="topbar-account-image" widht="100" height="100">
+        </button>
+    </div>
+    <div class="user" id="user">
+        <img src="images/account.svg" alt="" class="originalprofilePicture" id="profilePicture" widht="100" height="100">
+        <h1 class="username" id="username">utilisateur pas trouvé</h1>
+        <h2 class="unique" id="unique">unique</h2>
+        <p class="bio" id="bio"></p>
+        <button class="follow" id="follow" onclick="follow()">suivre</button>
+        <button class="following" id="following">abonnements: </button>
+        <button class="followers" id="followers">abonnés: </button>
+    </div>
+    <div class="posts" id="posts"></div>
+</body>
+</html>

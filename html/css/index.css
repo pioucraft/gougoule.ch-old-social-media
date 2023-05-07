@@ -1,0 +1,140 @@
+.search-text {
+    text-align: center;
+    font-size: 6vh;
+    margin-top: 35vh ;
+}
+
+.search {
+    height: 10vh;
+    width: 70%;
+    margin: auto;
+    display: block;
+    margin-top: 9vh ;
+    border: 2px solid #1a1a1b;
+    border-radius: 5vh;
+    background-color: #1a1a1b;
+    color: white;
+    outline: none;
+    color: #fff;
+    font-size: 2.5vh;
+    padding: 10px;
+}
+
+
+
+
+.down-arrow {
+    position:absolute;
+    top: 90vh;
+    left: calc(50% - 14px);
+    width: 0;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+}
+  
+.down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+}
+
+.posts {
+    margin-top: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.profilePicture {
+    border-radius: 50%;
+}
+
+.post {
+    background-color: #1a1a1b;
+    margin-top: 5vh;
+    border-style: solid;
+    border: #1a1a1b;
+    border-radius: 10vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post-button-account {
+    margin-left: 2vw;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    height: 10vh;
+    margin-top: 1.5vh;
+    flex-direction: row;
+    border: none;
+}
+
+.post-username {
+    color: white;
+    margin-left: 1vw;
+}
+
+.post-unique {
+    margin-left: 0.5vw;
+    color: #71767b;
+}
+
+.post-content {
+    word-break: break-all;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    margin-top: 10vh;
+}
+
+@media screen and (max-width: 110vh) {
+    .post-unique {
+        visibility: hidden;
+        position: fixed;
+    }
+    .search {
+        width: 95%;
+        font-size: 3vw;
+    }
+}
+
+.buttons {
+    display: flex;
+    margin-left: 5vw;
+    height: 10vh;
+}
+
+.button-like {
+    border-radius: 3vh;
+    display: flex;
+    align-items: center;
+    border: solid;
+    border-color: #343536;
+    height: 5vh;
+    color: white;
+    background: #343536;
+    cursor: pointer;
+}
+
+.button-comments {
+    margin-left: 1vw;
+    border-radius: 3vh;
+    display: flex;
+    align-items: center;
+    border: solid;
+    border-color: #343536;
+    height: 5vh;
+    color: white;
+    background: #343536;
+    cursor: pointer;
+}

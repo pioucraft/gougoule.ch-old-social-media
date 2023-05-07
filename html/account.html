@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compte Gougoule.ch</title>
+    <link rel="stylesheet" href="css/account.css">
+    <script src="js/account.js"></script>
+    <link rel="stylesheet" href="css/topbar.css">
+    <script src="js/topbar.js"></script>
+</head>
+<body>
+    <div class="topbar">
+        <button class="topbar-theButton" onclick="location.href='index.html'">
+            <img src="images/logo.svg" alt="Gougoule.ch logo" class="topbar-logo">
+        </button>
+        <button class="topbar-theButton" onclick="location.href='index.html'">
+            <h1 class="topbar-title">Gougoule.ch</h1>
+        </button>
+        <button class="topbar-post" onclick="location.href = 'post.html?m=0'">
+            <img src="images/post.svg" alt="post button image" class="topbar-post-image">
+        </button>
+        <input type="search" class="topbar-search" onchange="search()" id="search">
+        <h2 class="topbar-username" id="topbar-username">Se connecter</h2>
+        <button class="topbar-account" onclick="accountButton()">
+            <img src="images/account.svg" alt="account default logo" class="topbar-account-image" id="topbar-account-image" widht="100" height="100">
+        </button>
+    </div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="username">
+        <input type="text" placeholder="changer votre nom d'utilisateur" id="username" class="username-text">
+        <button onclick="setUsername()" class="username-button">changer votre nom d'utilisateur</button>
+    </div>
+
+    <div class="email">
+        <input type="text" placeholder="changer ou définir votre email" id="email" class="email-text">
+        <button onclick="setEmail()" class="email-button">changer ou définir votre email</button>
+    </div>
+
+    <div class="bio">
+        <textarea name="bio" id="bio" cols="20" rows="7" placeholder="changer votre biographie" maxlength="200" class="bio-text"></textarea>
+        <button onclick="setBio()" class="bio-button">changer votre biographie</button>
+    </div>
+
+    <div class="password">
+        <input type="text" placeholder="ancien mot de passe" id="oldPassword" class="password-text">
+        <input type="text" placeholder="nouveau mot de passe" id="newPassword" class="password-text">
+        <button onclick="changePassword()" class="password-button">changer votre mot de passe</button>
+    </div>
+    <form class="form">
+        <input type="file" name="file" id="files" class="form-file" >
+        <button type="submit" class="form-button">changer votre photo de profil</button>
+    </form>
+    <button onclick="disconnect()" class="disconnect">se déconnecter</button>
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            
+            e.preventDefault();
+            // Prevents HTML handling submission
+            const name = ""
+            const files = document.getElementById("files");
+            const formData = new FormData();
+            // Creates empty formData object
+            formData.append("name", name.value);
+            // Appends value of text input
+            for(let i =0; i < files.files.length; i++) {
+                formData.append("files", files.files[i]);
+            }
+            // Appends value(s) of file input
+            // Post data to Node and Express server:
+            fetch('https://gougoule.ch/api/upload-picture', {
+                method: 'POST',
+                body: formData, // Payload is formData object
+            })
+            .then(res => res.json())
+            .then(data => { 
+                console.log(data)
+                fetch(`https://gougoule.ch/api/set-profile-picture/${getCookie("unique")}/${getCookie("token")}/${data["response"].split("/").reverse()[0]}`)
+            });
+        })
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i <ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return null;
+        }
+    </script>
+</body>
+</html>

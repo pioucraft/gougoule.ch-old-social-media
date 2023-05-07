@@ -1,0 +1,185 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+}
+
+.originalPost {
+    background-color: #1a1a1b;
+    margin-top: 13vh;
+    border-style: solid;
+    border: #1a1a1b;
+    border-radius: 10vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.originalPost-button-account {
+    margin-left: 2vw;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    height: 10vh;
+    margin-top: 1.5vh;
+    flex-direction: row;
+    border: none;
+}
+
+.originalPost-like {
+    border-radius: 3vh;
+    display: flex;
+    align-items: center;
+    border: solid;
+    border-color: #343536;
+    height: 5vh;
+    color: white;
+    background: #343536;
+    cursor: pointer;
+    margin-left: 3vw;
+    margin-bottom: 2vh;
+}
+
+
+.posts {
+    margin-top: 13vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    background-color: #1a1a1b;
+    margin-top: 5vh;
+    border-style: solid;
+    border: #1a1a1b;
+    border-radius: 10vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post-button-account {
+    margin-left: 2vw;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    height: 10vh;
+    margin-top: 1.5vh;
+}
+
+.post-username {
+    color: white;
+    margin-left: 1vw;
+}
+
+.post-unique {
+    margin-left: 0.5vw;
+    color: #71767b;
+}
+
+.post-content {
+    word-break: break-all;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 110vh) {
+    .post-unique {
+        visibility: hidden;
+        position: fixed;
+    }
+}
+
+.buttons {
+    display: flex;
+    margin-left: 5vw;
+    height: 10vh;
+}
+
+.profilePicture {
+    border-radius: 50%;
+}
+
+.button-like {
+    border-radius: 3vh;
+    display: flex;
+    align-items: center;
+    border: solid;
+    border-color: #343536;
+    height: 5vh;
+    color: white;
+    background: #343536;
+    cursor: pointer;
+    border-style: solid;
+}
+
+.button-comments {
+    margin-left: 1vw;
+    border-radius: 3vh;
+    display: flex;
+    align-items: center;
+    border: solid;
+    border-color: #343536;
+    height: 5vh;
+    color: white;
+    background: #343536;
+    cursor: pointer;
+    border-style: solid;
+}
+
+.originalButton {
+    background-color: #343536;
+    cursor: pointer;
+    height: 5vh;
+    border-radius: 3vh;
+    border-color: #343536;
+    margin-left: 3vw;
+    margin-top: 3vh;
+    color: white;
+    border-style: solid;
+}
+
+.modify {
+    background-color: #343536;
+    border-color: #343536;
+    border-radius: 3vh;
+    resize: none;
+    color: white;
+    font-size: larger;
+    margin-left: 3vw;
+    margin-top: 3vh;
+    outline: none;
+    padding: 10px;
+    border-style: solid;
+}
+
+.modify-button {
+    background-color: #343536;
+    border-radius: 3vh;
+    height: 5vh;
+    border-color: #343536;
+    margin-left: 3vw;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    color: white;
+    cursor: pointer;
+    border-style: solid;
+}
+
+.postResponse {
+    background-color: #343536;
+    border-radius: 3vh;
+    border-color: #343536;
+    margin-left: 8vw;
+    margin-top: 3vh;
+    height: 5vh;
+    color: white;
+    cursor: pointer;
+    border-style: solid;
+}

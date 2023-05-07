@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>se connecter/créer un compte Gougoule.ch</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js"></script>
+</head>
+<body>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="login">
+        <h1 class="login-title" id="login-title">Se connecter</h1>
+        <input type="text" placeholder="unique" class="login-unique" id="login-unique">
+        <h2 class="login-unique-text" id="login-unique-text">Votre unique est en général le même que votre nom d'utilisateur</h2>
+
+        <input type="password" placeholder="mot de passe" class="login-password" id="login-password">
+        <p class="therms" id="therms">en vous connectant avec votre compte gougoule.ch vous acceptez l'utilisation des cookies, la politique de confidentialité et les conditions d'utilisation</p>
+
+        <button class="login-button" id="login-button" onclick="login()">Se connecter</button>
+        <button class="login-change" id="login-change" onclick="goSignUp()">Je n'ai pas encore de compte gougoule.ch</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.follow {
+    border-bottom-style: solid;
+    border-color: #1a1a1b;
+} 
+
+.follow-button-user {
+    background-color: black;
+    color: white;
+    border: none;
+    display: flex;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    cursor: pointer;
+    align-items: center;
+}
+
+.follow-username {
+    margin-left: 1vw;
+    margin-right: 0.5vw;
+}
+
+.follow-unique {
+    color: gray;
+    margin-top: auto;
+}
+
+.loadMore {
+    color: white;
+    background: #343536;
+    border-radius: 2vh;
+    border: #1a1a1b;
+    height: 5vh;
+    cursor: pointer;
+    margin-top: 2vh;
+}
+
+.followers {
+    margin-top: 13vh;
+}
+
+.following {
+    margin-top: 13vh;
+}
+
+.follow-profilePicture {
+    border-radius: 50%;
+}

@@ -1,0 +1,165 @@
+.user {
+    border-style: solid;
+    border-color: #1a1a1b;
+    border-radius: 10vh;
+    background-color: #1a1a1b;
+    margin-top: 13vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.originalprofilePicture {
+    margin-top: 3vh;
+    margin-left: 3vw;
+    border-radius: 50%;
+}
+
+.profilePicture {
+    border-radius: 50%;
+}
+
+.username {
+    margin-left: 3vw;
+}
+
+.unique {
+    margin-left: 3vw;
+    color: #71767b;
+    margin-top: -2vh;
+}
+
+.bio {
+    margin-left: 3vw;
+    font-size: large;
+    margin-top: -1vh;
+}
+
+.follow {
+    margin-top: 3vh;
+    margin-left: 3vw;
+    border-color: #343536;
+    border-radius: 3vh;
+    background-color: #343536;
+    color: white;
+    height: 5vh;
+    margin-bottom: 3vh;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.followers {
+    margin-top: 3vh;
+    margin-left: 0.5vw;
+    border-color: #343536;
+    border-radius: 3vh;
+    background-color: #343536;
+    color: white;
+    height: 5vh;
+    margin-bottom: 3vh;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.following {
+    margin-top: 3vh;
+    margin-left: 0.5vw;
+    border-color: #343536;
+    border-radius: 3vh;
+    background-color: #343536;
+    color: white;
+    height: 5vh;
+    margin-bottom: 3vh;
+    border-style: solid;
+    cursor: pointer;
+}
+
+body {
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.posts {
+    margin-top: 13vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    background-color: #1a1a1b;
+    margin-top: 5vh;
+    border-style: solid;
+    border: #1a1a1b;
+    border-radius: 10vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post-button-account {
+    margin-left: 2vw;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    height: 10vh;
+    margin-top: 1.5vh;
+    flex-direction: row;
+    border: none;
+}
+
+.post-username {
+    color: white;
+    margin-left: 1vw;
+}
+
+.post-unique {
+    margin-left: 0.5vw;
+    color: #71767b;
+}
+
+.post-content {
+    word-break: break-all;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    margin-top: 10vh;
+}
+
+@media screen and (max-width: 110vh) {
+    .post-unique {
+        visibility: hidden;
+        position: fixed;
+    }
+}
+
+.buttons {
+    display: flex;
+    margin-left: 5vw;
+    height: 10vh;
+}
+
+.button-like {
+    border-radius: 3vh;
+    display: flex;
+    align-items: center;
+    border: solid;
+    border-color: #343536;
+    height: 5vh;
+    color: white;
+    background: #343536;
+    cursor: pointer;
+}
+
+.button-comments {
+    margin-left: 1vw;
+    border-radius: 3vh;
+    display: flex;
+    align-items: center;
+    border: solid;
+    border-color: #343536;
+    height: 5vh;
+    color: white;
+    background: #343536;
+    cursor: pointer;
+}
